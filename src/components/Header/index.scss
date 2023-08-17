@@ -1,0 +1,29 @@
+@import '../../style/main.scss';
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 40px 0;
+
+  &__logo {
+    height: 68px;
+  }
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+
+  &__link {
+    color: $primary-color;
+    text-decoration: none;
+    font-size: 24px;
+
+    &--active {
+      text-decoration: underline;
+    }
+  }
+}

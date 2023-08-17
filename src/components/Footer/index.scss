@@ -1,0 +1,16 @@
+@import '../../style/main.scss';
+
+.footer {
+  background-color: $footer-color;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  padding: 50px 35px 35px;
+  margin-top: 0;
+
+  &__copyright {
+    color: $tertiary-color;
+    font-size: 24px;
+  }
+}
