@@ -1,4 +1,4 @@
-@import '../../style/variables.scss';
+@import '../../style/colors.scss';
 
 .error {
   display: flex;
@@ -11,6 +11,7 @@
     color: $primary-color;
     font-size: 18px;
     margin: 170px 0;
+    text-align: center;
   }
 }
 
@@ -21,13 +22,26 @@
   gap: 40px;
 
   &__404 {
-    font-size: 288px;
+    font-size: 18rem;
     font-weight: 700;
     margin: 0;
   }
   &__notfound {
-    font-size: 36px;
+    font-size: 2.3rem;
     font-weight: 500;
     margin: 0;
+    text-align: center;
+  }
+}
+
+/* Desktop */
+@media screen and (max-width: 650px) {
+  .error__message {
+    &__404 {
+      font-size: 12rem;
+    }
+    &__notfound {
+      font-size: 1.7rem;
+    }
   }
 }
