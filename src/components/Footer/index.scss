@@ -9,8 +9,26 @@
   padding: 50px 35px 35px;
   margin-top: 0;
 
+  &__logo {
+    width: 122px;
+  }
+
   &__copyright {
     color: $tertiary-color;
-    font-size: 24px;
+    font-size: 1.5rem;
+  }
+}
+
+/* Tablet */
+@media screen and (max-width: 650px) {
+  .footer {
+    gap: 30px;
+    padding: 40px 25px 25px;
+    &__logo {
+      width: 90px;
+    }
+    &__copyright {
+      font-size: 1.2rem;
+    }
   }
 }

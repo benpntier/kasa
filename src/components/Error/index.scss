@@ -34,14 +34,14 @@
   }
 }
 
-/* Desktop */
+/* Tablet */
 @media screen and (max-width: 650px) {
   .error__message {
     &__404 {
-      font-size: 12rem;
+      font-size: 11rem;
     }
     &__notfound {
-      font-size: 1.7rem;
+      font-size: 1.6rem;
     }
   }
 }
