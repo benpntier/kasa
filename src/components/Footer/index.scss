@@ -6,7 +6,7 @@
   flex-direction: column;
   align-items: center;
   gap: 40px;
-  padding: 50px 35px 35px;
+  padding: 60px 35px 35px;
   margin-top: 0;
 
   &__logo {
@@ -16,6 +16,7 @@
   &__copyright {
     color: $tertiary-color;
     font-size: 1.5rem;
+    font-weight: 400;
   }
 }
 
@@ -23,12 +24,19 @@
 @media screen and (max-width: 650px) {
   .footer {
     gap: 30px;
-    padding: 40px 25px 25px;
-    &__logo {
-      width: 90px;
-    }
+    padding: 50px 25px 25px;
     &__copyright {
       font-size: 1.2rem;
+    }
+  }
+}
+
+/* Mobile */
+@media screen and (max-width: 430px) {
+  .footer {
+    padding-bottom: 60px;
+    &__copyright {
+      font-size: 0.8rem;
     }
   }
 }
