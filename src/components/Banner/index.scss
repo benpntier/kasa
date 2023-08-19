@@ -28,7 +28,7 @@
 /* Tablet */
 @media screen and (max-width: 650px) {
   .banner {
-    &__img {
+    &__img--text {
       height: 170px;
     }
     &__text {
@@ -40,7 +40,7 @@
 /* Mobile */
 @media screen and (max-width: 430px) {
   .banner {
-    &__img {
+    &__img--text {
       height: 111px;
     }
     &__text {

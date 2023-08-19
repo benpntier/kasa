@@ -1,10 +1,11 @@
+import Banner from '../../components/Banner'
+import aboutBannerImage from '../../assets/banner-about.png'
+
 function About() {
   document.title = 'Kasa - A Propos'
   return (
     <main class="about max-width">
-      <div>
-        <h1>A Propos</h1>
-      </div>
+      <Banner img={aboutBannerImage} />
     </main>
   )
 }
