@@ -1,4 +1,5 @@
 function About() {
+  document.title = 'Kasa - A Propos'
   return (
     <main class="about max-width">
       <div>

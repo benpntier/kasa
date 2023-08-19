@@ -1,24 +1,14 @@
-import logo from './logo.svg'
-import './App.css'
+import Banner from '../../components/Banner'
+import homeBannerImage from '../../assets/banner-home.png'
 
 function Home() {
+  document.title = 'Kasa'
+  let bannerText = 'Chez vous,\n partout et ailleurs'
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          React
-        </a>
-      </header>
-    </div>
+    <main className="home max-width">
+      <Banner img={homeBannerImage} text={bannerText} />
+    </main>
   )
 }
 

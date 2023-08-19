@@ -1,4 +1,5 @@
 function Logement() {
+  document.title = 'Kasa - A Propos'
   return (
     <main class="logement max-width">
       <div>
