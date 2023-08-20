@@ -28,8 +28,11 @@
 /* Tablet */
 @media screen and (max-width: 650px) {
   .banner {
-    &__img--text {
-      height: 170px;
+    &__img {
+      border-radius: 10px;
+      &--text {
+        height: 170px;
+      }
     }
     &__text {
       font-size: 2rem;
