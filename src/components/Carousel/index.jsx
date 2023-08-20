@@ -37,18 +37,12 @@ function Carousel({ pictures }) {
       )}
       {pictures.map((picture, i) => {
         return (
-          <div
-            key={i}
-            className={
-              'carousel__picture' +
-              (i === visibleIndex ? ' carousel__picture--visible' : '')
-            }
-          >
+          <div key={i}>
             {i === visibleIndex && (
               <img
                 src={picture}
                 alt={'image' + { i }}
-                className="carousel__picture__img"
+                className="carousel__picture"
               />
             )}
           </div>
