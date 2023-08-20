@@ -12,13 +12,13 @@ function Logement() {
   /* Récupère la bonne fiche */
   const { id } = useParams()
 
-  const logement = Data.find((logement) => logement.id === id)
+  const logement = Data.find((logement) => logement?.id === id)
 
-  const tags = logement.tags.map((tag, i) => {
-    return <Tag key={i} tag={tag} />
+  const tags = logement?.tags.map((tag, index) => {
+    return <Tag key={index} tag={tag} />
   })
 
-  const equipments = logement.equipments.map((equipment, i) => {
+  const equipments = logement?.equipments.map((equipment, i) => {
     return (
       <span key={i} className="equipment-element">
         {equipment}

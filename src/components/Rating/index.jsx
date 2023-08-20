@@ -6,9 +6,15 @@ function Rating({ stars }) {
     <div className="rating">
       {range.map((star) =>
         stars >= star ? (
-          <i class="fa-solid fa-star rating__star rating__star--full"></i>
+          <i
+            key={star}
+            className="fa-solid fa-star rating__star rating__star--full"
+          ></i>
         ) : (
-          <i class="fa-solid fa-star rating__star rating__star--empty"></i>
+          <i
+            key={star}
+            className="fa-solid fa-star rating__star rating__star--empty"
+          ></i>
         )
       )}
     </div>
