@@ -30,7 +30,7 @@ function Logement() {
   })
 
   return (
-    <>
+    <div>
       {logement ? (
         <main className="logement max-width">
           <Carousel pictures={logement.pictures} />
@@ -69,7 +69,7 @@ function Logement() {
       ) : (
         <Navigate replace to="/404" />
       )}
-    </>
+    </div>
   )
 }
 
