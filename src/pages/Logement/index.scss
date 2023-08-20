@@ -5,6 +5,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    gap: 40px;
   }
   &__name {
     font-size: 2.25em;
@@ -21,6 +22,7 @@
   &__tags {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     gap: 10px;
     margin-top: 25px;
     margin-bottom: 0;
@@ -90,4 +92,109 @@
 
 .equipment-element {
   margin: 0;
+}
+
+/* Wide Tablet */
+@media screen and (max-width: 800px) {
+  .logement {
+    &__header {
+      flex-direction: column;
+      gap: 20px;
+    }
+    &__details {
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      align-items: center;
+    }
+    &__content {
+      flex-direction: column;
+      gap: 20px;
+    }
+    &__collapse {
+      width: 100%;
+    }
+  }
+}
+
+/* Tablet */
+@media screen and (max-width: 650px) {
+  .logement {
+    &__name {
+      font-size: 2rem;
+    }
+
+    &__host {
+      &__picture {
+        width: 56px;
+        height: 56px;
+      }
+    }
+
+    &__collapse {
+      & .collapse {
+        &__title {
+          border-radius: 5px;
+          &__content {
+            font-size: 0.9rem;
+          }
+        }
+        &__text {
+          &__content {
+            border-radius: 0 0 5px 5px;
+          }
+        }
+        &__icon .fa-solid {
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+}
+
+/* Mobile */
+@media screen and (max-width: 430px) {
+  .logement {
+    &__name {
+      font-size: 1.1rem;
+      margin-bottom: 10px;
+    }
+    &__location {
+      font-size: 0.9rem;
+    }
+    &__tags {
+      margin-top: 10px;
+    }
+    &__host {
+      gap: 10px;
+      &__picture {
+        width: 32px;
+        height: 32px;
+      }
+      &__name {
+        font-size: 0.75rem;
+      }
+    }
+    &__collapse {
+      & .collapse {
+        &__title {
+          padding-right: 0;
+          &__content {
+            font-size: 0.8rem;
+          }
+        }
+        &__text {
+          &__content {
+            padding: 20px 10px 15px;
+            font-size: 0.75rem;
+          }
+        }
+        &__icon .fa-solid {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+  .equipment-list {
+    gap: 2px;
+  }
 }
