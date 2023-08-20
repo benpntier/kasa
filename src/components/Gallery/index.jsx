@@ -9,7 +9,7 @@ function Gallery() {
       {logements.map((logement) => {
         return (
           <article key={logement.id} className="gallery__logement">
-            <Link to={`/logement/${logement.id}`} className="gallery__link">
+            <Link to={'/logement/${logement.id}'} className="gallery__link">
               <Card cover={logement.cover} title={logement.title} />
             </Link>
           </article>
