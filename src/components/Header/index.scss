@@ -58,3 +58,12 @@
     }
   }
 }
+
+/* Small Mobile */
+@media screen and (max-width: 370px) {
+  .header {
+    &__logo {
+      height: 32px;
+    }
+  }
+}

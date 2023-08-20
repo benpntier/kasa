@@ -1,4 +1,5 @@
 import Banner from '../../components/Banner'
+import Gallery from '../../components/Gallery'
 import homeBannerImage from '../../assets/banner-home.png'
 
 function Home() {
@@ -8,6 +9,7 @@ function Home() {
   return (
     <main className="home max-width">
       <Banner img={homeBannerImage} text={bannerText} />
+      <Gallery />
     </main>
   )
 }
