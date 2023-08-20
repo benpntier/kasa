@@ -1,0 +1,93 @@
+@import '../../style/colors.scss';
+
+.logement {
+  &__header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  &__name {
+    font-size: 2.25em;
+    font-weight: 500;
+    color: $primary-color;
+    margin: 0 0 5px;
+  }
+  &__location {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: $primary-color;
+    margin: 0;
+  }
+  &__tags {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-top: 25px;
+    margin-bottom: 0;
+  }
+  &__details {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: flex-end;
+  }
+  &__host {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    align-items: center;
+
+    &__name {
+      font-size: 1.1rem;
+      color: $primary-color;
+      white-space: pre-line;
+      margin: 0;
+    }
+
+    &__picture {
+      height: 64px;
+      width: 64px;
+      border-radius: 50%;
+    }
+  }
+  &__content {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: space-between;
+    margin: 20px 0 150px;
+  }
+  &__collapse {
+    width: 47%;
+
+    & .collapse {
+      &__text {
+        &__content {
+          font-size: 1.1rem;
+          padding-bottom: 30px;
+          border-radius: 0 0 10px 10px;
+        }
+      }
+      &__title {
+        padding-right: 10px;
+        border-radius: 10px;
+        &__content {
+          font-size: 1.1rem;
+          font-weight: 400;
+        }
+      }
+    }
+  }
+}
+
+.equipment-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.equipment-element {
+  margin: 0;
+}

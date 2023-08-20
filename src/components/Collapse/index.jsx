@@ -18,7 +18,7 @@ function Collapse({ title, text }) {
         </div>
       </div>
       <div className="collapse__text">
-        {isOpen && <p className="collapse__text__content">{text}</p>}
+        {isOpen && <div className="collapse__text__content">{text}</div>}
       </div>
     </div>
   )
