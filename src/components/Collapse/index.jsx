@@ -10,10 +10,10 @@ function Collapse({ title, text }) {
   }
 
   return (
-    <div className="collapse">
+    <div onClick={open} className="collapse">
       <div className="collapse__title">
         <h2 className="collapse__title__content">{title}</h2>
-        <div onClick={open} className="collapse__icon">
+        <div className="collapse__icon">
           <i className={'fa-solid fa-chevron-' + (isOpen ? 'up' : 'down')}></i>
         </div>
       </div>
