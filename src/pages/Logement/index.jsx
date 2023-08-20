@@ -9,15 +9,18 @@ import './index.scss'
 function Logement() {
   document.title = 'Kasa'
 
-  /* Récupère la bonne fiche */
+  // get id from url
   const { id } = useParams()
 
+  // get logement by id
   const logement = Data.find((logement) => logement?.id === id)
 
+  // return list of tags
   const tags = logement?.tags.map((tag, index) => {
     return <Tag key={index} tag={tag} />
   })
 
+  // return list of equipments
   const equipments = logement?.equipments.map((equipment, i) => {
     return (
       <span key={i} className="equipment-element">

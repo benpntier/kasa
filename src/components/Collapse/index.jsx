@@ -4,7 +4,7 @@ import React, { useState } from 'react'
 function Collapse({ title, text }) {
   const [isOpen, setIsOpen] = useState(false)
 
-  //fonction pour gérer l'afichage du contenu des collapses
+  // update state if open or closed
   function open() {
     setIsOpen(!isOpen)
   }
