@@ -1,0 +1,35 @@
+@import '../../style/colors.scss';
+
+.carousel {
+  position: relative;
+  margin-bottom: 30px;
+
+  &__arrow {
+    position: absolute;
+    bottom: 50%;
+    color: $tertiary-color;
+    font-size: 6rem;
+    transform: translateY(50%);
+
+    &--left {
+      left: 0.25em;
+    }
+    &--right {
+      right: 0.25em;
+    }
+  }
+
+  &__picture__img {
+    height: 415px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 25px;
+  }
+  &__number {
+    position: absolute;
+    bottom: 1em;
+    left: 50%;
+    font-size: 1.1em;
+    color: $tertiary-color;
+  }
+}

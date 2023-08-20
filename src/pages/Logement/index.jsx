@@ -1,5 +1,6 @@
 import { useParams, Navigate } from 'react-router-dom'
 import Collapse from '../../components/Collapse'
+import Carousel from '../../components/Carousel'
 import Tag from '../../components/Tag'
 import Rating from '../../components/Rating'
 import Data from '../../data/logements.json'
@@ -29,7 +30,8 @@ function Logement() {
     <>
       {logement ? (
         <main className="logement max-width">
-          <div className="logement__header">
+          <Carousel pictures={logement.pictures} />
+          <section className="logement__header">
             <div className="logement__infos">
               <h1 className="logement__name">{logement.title}</h1>
               <h2 className="logement__location">{logement.location}</h2>
@@ -48,8 +50,8 @@ function Logement() {
               </div>
               <Rating stars={logement.rating} />
             </div>
-          </div>
-          <div className="logement__content">
+          </section>
+          <section className="logement__content">
             <div className="logement__collapse">
               <Collapse title="Description" text={logement.description} />
             </div>
@@ -59,7 +61,7 @@ function Logement() {
                 text={<div className="equipment-list">{equipments}</div>}
               />
             </div>
-          </div>
+          </section>
         </main>
       ) : (
         <Navigate replace to="/404" />
