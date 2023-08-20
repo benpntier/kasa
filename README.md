@@ -3,7 +3,7 @@
 
 ![Banner](kasa-banner.png)
 
-**Kasa** est un des leaders de la location d’appartements entre particuliers en France. Pour une **refonte complète** de leur **plateforme web**, l'objectif est de **développer** la partie **front-end** de cette nouvelle application et ses différents **composants**, avec **React**, et les routes **React Router**, selon des maquettes **Figma**.
+**Kasa** est un des leaders de la location d’appartements entre particuliers en France. Pour une **refonte complète** de leur **plateforme web**, l'objectif est de **développer** la partie **front-end** de cette nouvelle application et ses différents **composants**, avec **React**, et les routes **React Router**, selon des maquettes **Figma** *responsives*.
 
 ## Contraintes techniques
 
