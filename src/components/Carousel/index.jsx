@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import './index.scss'
 
 function Carousel({ pictures }) {
-  const [visibleIndex, setVisibleIndex] = useState(0) // index of  the visible image
+  const [visibleIndex, setVisibleIndex] = useState(0) // index of the visible image
   const nbPictures = pictures.length // total number of pictures
 
   // display the previous picture (call on first picture displays last picture)

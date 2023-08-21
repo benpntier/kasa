@@ -43,7 +43,7 @@ function Logement() {
             <div className="logement__details">
               <div className="logement__host">
                 <p className="logement__host__name">
-                  {logement.host.name.split(' ').join('\n')}
+                  {logement.host.name.replace(' ', '\n')}
                 </p>
                 <img
                   src={logement.host.picture}
