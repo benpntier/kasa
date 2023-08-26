@@ -2,8 +2,16 @@ import React, { useState } from 'react'
 import './index.scss'
 
 function Carousel({ pictures }) {
-  const [visibleIndex, setVisibleIndex] = useState(0) // index of the visible image
-  const nbPictures = pictures.length // total number of pictures
+  // index of the visible image
+  const [visibleIndex, setVisibleIndex] = useState(0)
+
+  // if there are no pictures
+  if (!Array.isArray(pictures) || pictures.length === 0) {
+    return null
+  }
+
+  // total number of pictures
+  const nbPictures = pictures.length
 
   // display the previous picture (call on first picture displays last picture)
   const prevPicture = () => {
@@ -13,11 +21,6 @@ function Carousel({ pictures }) {
   // display the next picture (call on last picture displays first picture)
   const nextPicture = () => {
     setVisibleIndex(visibleIndex === nbPictures - 1 ? 0 : visibleIndex + 1)
-  }
-
-  // if there are no pictures
-  if (!Array.isArray(pictures) || nbPictures <= 0) {
-    return null
   }
 
   return (
