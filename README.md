@@ -31,4 +31,11 @@
 * La page 404 est renvoyée pour chaque route inexistante, ou si une valeur présente dans l'URL ne fait pas partie des données renseignées
 * La logique du routeur est réunie dans un seul fichier
 
+### Lancer l'application Kasa
+
+Pour une démonstration de l'application web, vous pouvez télécharger les fichiers, naviguer dans le répertoire `kasa`, et exécuter les commandes suivantes (si besoin, installer une version à jour de node.js pour les commandes `npm`) :
+```console
+npm install
+npm start
+```
 ![Screenshot](desktop.png)
